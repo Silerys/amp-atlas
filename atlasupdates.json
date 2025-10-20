@@ -1,0 +1,14 @@
+[
+    {
+        "UpdateStageName": "Installation and update",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "834910/",
+        "UpdateSourceArgs": "1006030",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "ForceDownloadPlatform": "Windows",
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
+]

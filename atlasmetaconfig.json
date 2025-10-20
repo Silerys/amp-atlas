@@ -1,0 +1,17 @@
+[
+    {
+        "ConfigFile": "ShooterGame\\Saved\\Config\\WindowsServer\\Game.ini",
+        "ConfigType": "ini",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "ShooterGame\\Saved\\Config\\WindowsServer\\GameUserSettings.ini",
+        "ConfigType": "ini",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "ShooterGame\\ServerGrid\\ServerGrid.json",
+        "ConfigType": "json",
+        "AutoMap": true
+    }
+]

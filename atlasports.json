@@ -1,0 +1,30 @@
+[
+    {
+        "Protocol": "Both",
+        "Port": "5761",
+        "Name": "Main Game Port",
+        "Description": "Port used for main game traffic",
+        "Ref": "MainGamePort"
+    },
+    {
+        "Protocol": "UDP",
+        "Port": "57561",
+        "Name": "Steam Query Port",
+        "Description": "Port used for main game traffic",
+        "Ref": "SteamQueryPort"
+    },
+    {
+        "Protocol": "UDP",
+        "Port": "27000",
+        "Name": "Seamless Travel",
+        "Description": "Port used for main game traffic",
+        "Ref": "SeamlessTravel"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": "28000",
+        "Name": "Remote Admin Port",
+        "Description": "Port used for main game traffic",
+        "Ref": "RemoteAdminPort"
+    }
+]
