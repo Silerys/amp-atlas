@@ -1,10 +1,32 @@
 {
-    "id": "bf70d994-2369-4f28-85b0-a4377ef6a78c",
-    "authors": [
-        "Silerys - Made with AMP Config Generator"
-    ],
-    "origin": "https://github.com/Silerys - Made with AMP Config Generator/AMPTemplates.git",
-    "url": "https://github.com/Silerys - Made with AMP Config Generator/AMPTemplates",
-    "imagefile": "",
-    "prefix": "Silerys - Made with AMP Config Generator"
+  "id": "atlas-ocean-morgann",
+  "name": "ATLAS (Ocean Grid) – Generic",
+  "version": "1.0.0",
+  "module": "Generic",
+  "authors": ["Silerys"],
+  "origin": "https://github.com/<TON_COMPTE>/amp-atlas",
+  "url": "https://github.com/<TON_COMPTE>/amp-atlas",
+  "imagefile": "",
+  "workingDirectory": "",
+  "executablePath": "ShooterGame\\Binaries\\Win64\\ShooterGameServer.exe",
+  "commandLine": "Ocean?ServerX={{$ServerX}}?ServerY={{$ServerY}}?SeamlessIP={{$PublicIP}}?SessionName=\\\"{{$SessionName}}\\\"?Port={{$GamePort}}?QueryPort={{$QueryPort}}?MaxPlayers={{$MaxUsers}}?RCONEnabled=true?RCONPort={{$RconPort}}?ServerPassword={{$ServerPassword}}?ServerAdminPassword={{$ServerAdminPassword}} -log -server -NoBattlEye",
+  "settings": [
+    { "displayName": "Public IP",            "fieldName": "PublicIP",            "type": "text",   "defaultValue": "" },
+    { "displayName": "Server X",             "fieldName": "ServerX",             "type": "number", "defaultValue": 0 },
+    { "displayName": "Server Y",             "fieldName": "ServerY",             "type": "number", "defaultValue": 0 },
+    { "displayName": "Session Name",         "fieldName": "SessionName",         "type": "text",   "defaultValue": "ATLAS Ocean" },
+    { "displayName": "Game Port",            "fieldName": "GamePort",            "type": "number", "defaultValue": 5761 },
+    { "displayName": "Query Port",           "fieldName": "QueryPort",           "type": "number", "defaultValue": 57561 },
+    { "displayName": "RCON Port",            "fieldName": "RconPort",            "type": "number", "defaultValue": 28000 },
+    { "displayName": "Max Players",          "fieldName": "MaxUsers",            "type": "number", "defaultValue": 30 },
+    { "displayName": "Server Password",      "fieldName": "ServerPassword",      "type": "text",   "defaultValue": "" },
+    { "displayName": "Admin Password",       "fieldName": "ServerAdminPassword", "type": "text",   "defaultValue": "" },
+    { "displayName": "Seamless/Data Port",   "fieldName": "SeamlessPort",        "type": "number", "defaultValue": 27000 }
+  ],
+  "ports": [
+    { "name": "Game",     "protocol": "udp", "portSetting": "GamePort"   },
+    { "name": "Query",    "protocol": "udp", "portSetting": "QueryPort"  },
+    { "name": "RCON",     "protocol": "tcp", "portSetting": "RconPort"   },
+    { "name": "Seamless", "protocol": "udp", "portSetting": "SeamlessPort" }
+  ]
 }
